@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sejal Patra | Forensic DNA Analyst</title>
+<meta name="description" content="Academic website of Sejal Patra, forensic DNA analyst and researcher. BSc Forensic Science (Hons with Research), Lovely Professional University.">
+<meta property="og:title" content="Sejal Patra | Forensic DNA Analyst">
+<meta property="og:description" content="DNA analysis, extraction methods, STR profiling and chain of custody.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f2f5f6; --surface:#ffffff; --ink:#13262b; --muted:#4d6268; --line:#cfdadd;
+  --accent:#0b6e79; --accent-ink:#ffffff;
+  --dye-b:#2a5bd7; --dye-g:#1f9d55; --dye-y:#2b2b2b; --dye-r:#d63b3b;
+  --serif:'Newsreader',Georgia,'Times New Roman',serif;
+  --sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1b1f; --surface:#162529; --ink:#e6eff1; --muted:#9db3b9; --line:#2b4046;
+    --accent:#4cc3cf; --accent-ink:#0b1a1d;
+    --dye-b:#6e93ff; --dye-g:#4cc884; --dye-y:#e9e9e9; --dye-r:#ff7a7a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1b1f; --surface:#162529; --ink:#e6eff1; --muted:#9db3b9; --line:#2b4046;
+  --accent:#4cc3cf; --accent-ink:#0b1a1d;
+  --dye-b:#6e93ff; --dye-g:#4cc884; --dye-y:#e9e9e9; --dye-r:#ff7a7a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--sans)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+
+header.nav{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:56px;flex-wrap:wrap}
+.brand{font:600 1.1rem var(--serif);color:var(--ink);text-decoration:none}
+.nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+.nav ul a{color:var(--muted);text-decoration:none;font-size:.95rem;font-weight:500}
+.nav ul a:hover{color:var(--ink)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:4px 12px;font:500 .85rem var(--sans);cursor:pointer}
+
+.hero{padding:64px 0 24px}
+.hero h1{font:600 clamp(2.6rem,7vw,4.6rem)/1.02 var(--serif);margin:0 0 12px;letter-spacing:-.02em}
+.hero .role{font:400 clamp(1.2rem,2.6vw,1.6rem)/1.3 var(--serif);color:var(--muted);margin:0 0 20px}
+.hero p.lead{max-width:60ch;margin:0 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{filter:brightness(1.1)}
+
+.profile{margin:40px 0 0;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 12px 4px}
+.profile figcaption{color:var(--muted);font-size:.85rem;padding:4px 8px 8px}
+svg.trace{display:block;width:100%;height:auto}
+.trace path{fill:none;stroke-width:1.8;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+.trace.go path{animation:draw 2.4s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.trace text{fill:var(--muted);font:500 10px var(--sans)}
+.trace .axis{stroke:var(--line);stroke-width:1}
+@media (prefers-reduced-motion:reduce){.trace path{stroke-dashoffset:0;animation:none!important}}
+
+section{padding:56px 0 8px}
+h2{font:600 clamp(1.7rem,3.4vw,2.2rem)/1.15 var(--serif);margin:0 0 20px;letter-spacing:-.01em}
+h3{font:600 1.15rem/1.3 var(--serif);margin:0 0 4px}
+.meta{color:var(--muted);font-size:.92rem;margin:0 0 8px}
+.item{padding:20px 0;border-top:1px solid var(--line)}
+.item:last-child{border-bottom:1px solid var(--line)}
+.item ul{margin:8px 0 0;padding-left:20px}
+.item li{margin:4px 0;max-width:68ch}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.skills dt{font-weight:600;margin-top:14px}
+.skills dd{margin:2px 0 0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.tags li{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 14px;font-size:.92rem}
+.contact p{max-width:60ch}
+footer{margin-top:64px;border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:.9rem}
+@media (max-width:720px){.two{grid-template-columns:1fr;gap:0}.nav ul{gap:14px}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Sejal Patra</a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme" type="button" aria-label="Switch between light and dark theme">Theme</button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="hero">
+      <h1>Sejal Patra</h1>
+      <p class="role">Forensic DNA analyst and researcher</p>
+      <p class="lead">I work on DNA extraction, STR profiling and evidence handling that holds up in court. I am a DNA Analyst at Truth Labs Forensic Services in Hyderabad.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://www.linkedin.com/in/sejal-patra-144a3a42b" target="_blank" rel="noopener noreferrer">View LinkedIn profile</a>
+        <a class="btn ghost" href="Sejal_Patra_-_Curriculum_Vitae.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+
+      <figure class="profile">
+        <svg id="trace" class="trace" viewBox="0 0 900 210" role="img" aria-label="Decorative STR electropherogram with four coloured dye channels"></svg>
+        <figcaption>An STR electropherogram: each peak is an allele, each colour a dye channel.</figcaption>
+      </figure>
+    </div>
+
+    <section id="about">
+      <h2>About</h2>
+      <p style="max-width:68ch">I trained in forensic science at Lovely Professional University, where my coursework covered molecular biology, forensic serology, DNA profiling, crime scene investigation, forensic chemistry and toxicology, and medical law and ethics. My undergraduate research looked at forensic genetics and laboratory validation. In August 2026 I joined Truth Labs Forensic Services as a DNA Analyst. I care most about strict quality control, careful documentation, and results that are accurate and defensible.</p>
+    </section>
+
+    <section id="research">
+      <h2>Research and projects</h2>
+      <div class="item">
+        <h3>DNA extraction and analysis methodology review</h3>
+        <p class="meta">Academic project, Lovely Professional University</p>
+        <ul>
+          <li>Compared the efficiency of organic and silica-based extraction protocols for degraded biological evidence.</li>
+          <li>Wrote standard operating procedures (SOPs) for handling blood, saliva and epithelial cell samples to forensic standards.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h3>Mock crime scene investigation and evidence preservation</h3>
+        <p class="meta">Practical coursework, Department of Forensic Science, LPU</p>
+        <ul>
+          <li>Processed biological trace evidence from simulated crime scenes under strict chain of custody.</li>
+          <li>Ran presumptive and confirmatory serological tests for blood, semen and other body fluids.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="two">
+        <dl class="skills" style="margin:0">
+          <dt>Laboratory techniques</dt>
+          <dd>DNA extraction, PCR, agarose gel electrophoresis, spectrophotometry, presumptive blood and body fluid testing</dd>
+          <dt>Forensic concepts</dt>
+          <dd>STR analysis, biological sample preservation, chain of custody, cross-contamination prevention</dd>
+          <dt>Instruments and software</dt>
+          <dd>Thermocycler operation, precise micropipetting, microscopy, Excel, SPSS basics</dd>
+        </dl>
+        <div>
+          <h3 style="margin-top:14px">Core competencies</h3>
+          <ul class="tags" style="margin-top:12px">
+            <li>Quality control and assurance</li>
+            <li>Methodical evidence handling</li>
+            <li>Scientific report writing</li>
+            <li>Analytical thinking</li>
+            <li>Teamwork</li>
+          </ul>
+          <h3 style="margin-top:24px">Languages</h3>
+          <p class="meta" style="margin-top:6px">Hindi (proficient), English (intermediate)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education, work and training</h2>
+      <div class="item">
+        <h3>DNA Analyst, Truth Labs Forensic Services</h3>
+        <p class="meta">Hyderabad, since August 2026</p>
+      </div>
+      <div class="item">
+        <h3>BSc Forensic Science (Honours with Research)</h3>
+        <p class="meta">Lovely Professional University, Jalandhar</p>
+      </div>
+      <div class="item">
+        <h3>Workshops and seminars</h3>
+        <ul>
+          <li>Hands-on workshop on DNA isolation and electrophoresis, covering agarose gel analysis and PCR amplification.</li>
+          <li>Seminar on forensic serology and crime scene ethics, covering evidence handling for legal admissibility and ISO/IEC 17025.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>For collaborations, research questions or professional networking, message me on LinkedIn or write by email.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://www.linkedin.com/in/sejal-patra-144a3a42b" target="_blank" rel="noopener noreferrer">Open LinkedIn</a>
+        <a class="btn ghost" href="mailto:sejalpatra2007@gmail.com">sejalpatra2007@gmail.com</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Sejal Patra. Hosted on GitHub Pages.</div>
+</footer>
+
+<script>
+(function(){
+  /* Electropherogram: four dye channels drawn as sums of Gaussian peaks */
+  var W=900,H=210,base=180,svg=document.getElementById('trace'),NS='http://www.w3.org/2000/svg';
+  var chans=[
+    {c:'var(--dye-b)',p:[[90,70,6],[170,110,6],[250,60,6],[330,95,6],[410,50,6]]},
+    {c:'var(--dye-g)',p:[[120,95,6],[205,60,6],[290,120,6],[370,80,6],[470,100,6],[550,55,6]]},
+    {c:'var(--dye-y)',p:[[150,80,6],[240,115,6],[330,45,6],[430,90,6],[520,70,6],[610,110,6],[690,60,6]]},
+    {c:'var(--dye-r)',p:[[200,65,6],[310,100,6],[420,55,6],[560,120,6],[640,75,6],[740,95,6],[820,60,6]]}
+  ];
+  var ax=document.createElementNS(NS,'line');
+  ax.setAttribute('x1',20);ax.setAttribute('x2',880);ax.setAttribute('y1',base);ax.setAttribute('y2',base);ax.setAttribute('class','axis');
+  svg.appendChild(ax);
+  chans.forEach(function(ch,i){
+    var d='M20,'+base;
+    for(var x=20;x<=880;x+=2){
+      var y=0;
+      ch.p.forEach(function(k){var dx=x-k[0];y+=k[1]*Math.exp(-(dx*dx)/(2*k[2]*k[2]));});
+      y+=1.2*Math.sin(x*.9+i);
+      d+=' L'+x+','+(base-y).toFixed(1);
+    }
+    var p=document.createElementNS(NS,'path');
+    p.setAttribute('d',d);p.setAttribute('pathLength','1');p.setAttribute('stroke',ch.c);
+    p.style.animationDelay=(i*0.25)+'s';
+    svg.appendChild(p);
+  });
+  var t=document.createElementNS(NS,'text');
+  t.setAttribute('x',20);t.setAttribute('y',200);t.textContent='fragment size (bp)';
+  svg.appendChild(t);
+  requestAnimationFrame(function(){svg.classList.add('go');});
+
+  /* Theme toggle */
+  var root=document.documentElement,btn=document.getElementById('theme');
+  try{var s=localStorage.getItem('theme');if(s)root.setAttribute('data-theme',s);}catch(e){}
+  btn.addEventListener('click',function(){
+    var cur=root.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+    var next=cur==='dark'?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
